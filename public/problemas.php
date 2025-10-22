@@ -30,4 +30,43 @@ echo "Stock: " . $stockDisponible . " unidades<br>";
 echo "¿En Oferta?: " . ($enOferta ? "Sí" : "No") . "<br>";
 echo "<hr>";
 
+// Problema 1.3: Constantes de la Aplicación
+// Declara e imprime dos constantes.
+define("NOMBRE_SITIO", "Mi Tienda Online");
+const VERSION_APP = 1.0;
+
+echo "<h3>Problema 1.3: Constantes de la Aplicación</h3>";
+echo "Nombre del sitio: " . NOMBRE_SITIO . "<br>";
+echo "Versión de la aplicación: " . VERSION_APP . "<br>";
+echo "<hr>";
+
+
+// Problema 2.1: Calculadora Básica
+// Realiza las operaciones aritméticas básicas.
+$num1 = 10;
+$num2 = 5;
+
+echo "<h3>Problema 2.1: Calculadora Básica</h3>";
+echo "Suma (10 + 5): " . ($num1 + $num2) . "<br>";
+echo "Resta (10 - 5): " . ($num1 - $num2) . "<br>";
+echo "Multiplicación (10 * 5): " . ($num1 * $num2) . "<br>";
+echo "División (10 / 5): " . ($num1 / $num2) . "<br>";
+echo "<hr>";
+
+// Problema 2.2: Actualización de Stock
+// Utiliza operadores de asignación compuestos.
+$stock = 100;
+
+echo "<h3>Problema 2.2: Actualización de Stock</h3>";
+echo "Stock inicial: " . $stock . "<br>";
+
+// Simula una venta de 25 unidades
+$stock -= 25;
+echo "Stock después de la venta: " . $stock . "<br>";
+
+// Simula la llegada de un nuevo pedido de 50 unidades
+$stock += 50;
+echo "Stock después del pedido: " . $stock . "<br>";
+echo "<hr>";
+
 ?>
